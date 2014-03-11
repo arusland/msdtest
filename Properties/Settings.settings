@@ -1,0 +1,144 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MsDynamicsTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MsDynamicsTest_MsNav_Customer_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Customer</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_CompanyInfo_CompanyInfo_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/CompanyInfo</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_Currencies_Currencies_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Currencies</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_Languages_Languages_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Languages</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_CustomerLists_CustomerList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/CustomerList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_LocationLists_LocationList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/LocationList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_ItemLists_ItemList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ItemList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_Boms_Bom_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Bom</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_PurchaseOrders_PurchaseOrder_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/PurchaseOrder</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_Areass_Areas_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Areas</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_PurchaseLists_PurchaseList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/PurchaseList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_InventoryPickss_InventoryPicks_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPicks</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_InvPostingGroups_InventoryPostingGroups_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPostingGroups</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_PhysInvLedgerEntries_PhysInventoryLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/PhysInventoryLedgerEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_PhysInvJournal_PhysInventoryJournal_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/PhysInventoryJournal</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInvSetup_InventorySetup_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventorySetup</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavReportSelectionInv_ReportSelectionInventory_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ReportSelectionInventory</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryPostingSetup_InventoryPostingSetup_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPostingSetup</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryPeriods_InventoryPeriods_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPeriods</Value>
+    </Setting>
+    <Setting Name="ApiUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd</Value>
+    </Setting>
+    <Setting Name="ApiLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ruslan</Value>
+    </Setting>
+    <Setting Name="ApiPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dev1234</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryPeriodEntries_InventoryPeriodEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPeriodEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryGLReconciliation_InventoryGLReconciliation_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryGLReconciliation</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryReportEntry_InventoryReportEntry_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryReportEntry</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryAnalysisLines_InventoryAnalysisLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryAnalysisLines</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryAnalysisReport_InventoryAnalysisReport_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryAnalysisReport</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryPutAway_InventoryPutAway_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryPutAway</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryAnalysisMatrix_InventoryAnalysisMatrix_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryAnalysisMatrix</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavInventoryGLReconciliation2_InventoryGLReconciliation2_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryGLReconciliation2</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavAnalysisViewListInventory_AnalysisViewListInventory_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/AnalysisViewListInventory</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavAnalysisReportInventory_AnalysisReportInventory_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/AnalysisReportInventory</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavVendorList_VendorList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/VendorList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavVendorCard_VendorCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/VendorCard</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavCustomerPriceGroups_CustomerPriceGroups_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/CustomerPriceGroups</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavUsers_Users_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/Users</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavJobCard_JobCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/JobCard</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavItemCard_ItemCard_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ItemCard</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavSalesOrder_SalesOrder_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/SalesOrder</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavBlanketSalesOrder_BlanketSalesOrder_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/BlanketSalesOrder</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavGeneralLedgerEntries_GeneralLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/GeneralLedgerEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavCustomerLedgerEntries_CustomerLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/CustomerLedgerEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavVendorLedgerEntries_VendorLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/VendorLedgerEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavItemLedgerEntries_ItemLedgerEntries_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ItemLedgerEntries</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavSalesList_SalesList_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/SalesList</Value>
+    </Setting>
+    <Setting Name="MsDynamicsTest_MsNavSalesLines_SalesLines_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/SalesLines</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

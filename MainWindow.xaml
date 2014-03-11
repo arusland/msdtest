@@ -1,0 +1,26 @@
+﻿<Window x:Class="MsDynamicsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Microsoft Dynamics Research Tool" Height="750" Width="1100" WindowStartupLocation="CenterScreen" Icon="Images/favicon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TreeView x:Name="tree"/>
+        <!--<ListBox x:Name="list" FontSize="15"/>-->
+        <StackPanel Margin="3" Grid.Row="1" Orientation="Horizontal">
+            <ComboBox x:Name="serviceComboBox" HorizontalAlignment="Left" Margin="3"/>
+            <TextBlock Text="Max Count" VerticalAlignment="Center" Margin="3"/>
+            <TextBox x:Name="maxCountTextBox" Width="100" Height="25" Margin="3" Text="1000"/>
+            <TextBlock Text="Param/Search" VerticalAlignment="Center" Margin="3"/>
+            <TextBox x:Name="paramTextBox" Width="200" Height="25" Margin="3" Text="" KeyDown="paramTextBox_KeyDown"/>
+            <Button x:Name="ExecuteButton" Width="80" Height="28" Content="Execute" HorizontalAlignment="Right" Click="ExecuteButton_Click" Margin="3"/>
+            <Button x:Name="ClearButton" Width="80" Height="28" Content="Clear" HorizontalAlignment="Right" Margin="3" Click="ClearButton_Click"/>
+            <Button x:Name="CreateButton" Width="80" Height="28" Content="Create Item" HorizontalAlignment="Right" Margin="3" Click="CreateButton_Click"/>
+            <Button x:Name="DeleteButton" Width="80" Height="28" Content="Delete Item" HorizontalAlignment="Right" Margin="3,0,3,3" VerticalAlignment="Bottom" Click="DeleteButton_Click"/>
+            <CheckBox x:Name="ShowAllCheckBox"  Content="Show all fields (Specified, Key, etc)"  VerticalAlignment="Center" Margin="3"/>
+        </StackPanel>
+    </Grid>
+</Window>

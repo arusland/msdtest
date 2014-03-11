@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2" targetNamespace="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="InventoryGLReconciliation2">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="Key" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Name" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field1" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field2" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field3" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field4" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field5" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field6" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field7" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field8" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field9" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field10" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field11" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field12" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field13" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field14" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field15" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field16" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field17" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field18" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field19" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field20" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field21" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field22" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field23" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field24" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field25" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field26" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field27" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field28" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field29" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field30" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field31" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Field32" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InventoryGLReconciliation2_List">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="InventoryGLReconciliation2" type="tns:InventoryGLReconciliation2" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="InventoryGLReconciliation2_Fields">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Name" />
+          <xsd:enumeration value="Field1" />
+          <xsd:enumeration value="Field2" />
+          <xsd:enumeration value="Field3" />
+          <xsd:enumeration value="Field4" />
+          <xsd:enumeration value="Field5" />
+          <xsd:enumeration value="Field6" />
+          <xsd:enumeration value="Field7" />
+          <xsd:enumeration value="Field8" />
+          <xsd:enumeration value="Field9" />
+          <xsd:enumeration value="Field10" />
+          <xsd:enumeration value="Field11" />
+          <xsd:enumeration value="Field12" />
+          <xsd:enumeration value="Field13" />
+          <xsd:enumeration value="Field14" />
+          <xsd:enumeration value="Field15" />
+          <xsd:enumeration value="Field16" />
+          <xsd:enumeration value="Field17" />
+          <xsd:enumeration value="Field18" />
+          <xsd:enumeration value="Field19" />
+          <xsd:enumeration value="Field20" />
+          <xsd:enumeration value="Field21" />
+          <xsd:enumeration value="Field22" />
+          <xsd:enumeration value="Field23" />
+          <xsd:enumeration value="Field24" />
+          <xsd:enumeration value="Field25" />
+          <xsd:enumeration value="Field26" />
+          <xsd:enumeration value="Field27" />
+          <xsd:enumeration value="Field28" />
+          <xsd:enumeration value="Field29" />
+          <xsd:enumeration value="Field30" />
+          <xsd:enumeration value="Field31" />
+          <xsd:enumeration value="Field32" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="InventoryGLReconciliation2_Filter">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="Field" type="tns:InventoryGLReconciliation2_Fields" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="Criteria" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ReadByRecId">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="recId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadByRecId_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="InventoryGLReconciliation2" type="tns:InventoryGLReconciliation2" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="unbounded" name="filter" type="tns:InventoryGLReconciliation2_Filter" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="bookmarkKey" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="setSize" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ReadMultiple_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="ReadMultiple_Result" type="tns:InventoryGLReconciliation2_List" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="IsUpdated_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="IsUpdated_Result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="Key" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetRecIdFromKey_Result">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="GetRecIdFromKey_Result" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="ReadByRecId">
+    <part name="parameters" element="tns:ReadByRecId" />
+  </message>
+  <message name="ReadByRecId_Result">
+    <part name="parameters" element="tns:ReadByRecId_Result" />
+  </message>
+  <message name="ReadMultiple">
+    <part name="parameters" element="tns:ReadMultiple" />
+  </message>
+  <message name="ReadMultiple_Result">
+    <part name="parameters" element="tns:ReadMultiple_Result" />
+  </message>
+  <message name="IsUpdated">
+    <part name="parameters" element="tns:IsUpdated" />
+  </message>
+  <message name="IsUpdated_Result">
+    <part name="parameters" element="tns:IsUpdated_Result" />
+  </message>
+  <message name="GetRecIdFromKey">
+    <part name="parameters" element="tns:GetRecIdFromKey" />
+  </message>
+  <message name="GetRecIdFromKey_Result">
+    <part name="parameters" element="tns:GetRecIdFromKey_Result" />
+  </message>
+  <portType name="InventoryGLReconciliation2_Port">
+    <operation name="ReadByRecId">
+      <input name="ReadByRecId" message="tns:ReadByRecId" />
+      <output name="ReadByRecId_Result" message="tns:ReadByRecId_Result" />
+    </operation>
+    <operation name="ReadMultiple">
+      <input name="ReadMultiple" message="tns:ReadMultiple" />
+      <output name="ReadMultiple_Result" message="tns:ReadMultiple_Result" />
+    </operation>
+    <operation name="IsUpdated">
+      <input name="IsUpdated" message="tns:IsUpdated" />
+      <output name="IsUpdated_Result" message="tns:IsUpdated_Result" />
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <input name="GetRecIdFromKey" message="tns:GetRecIdFromKey" />
+      <output name="GetRecIdFromKey_Result" message="tns:GetRecIdFromKey_Result" />
+    </operation>
+  </portType>
+  <binding name="InventoryGLReconciliation2_Binding" type="tns:InventoryGLReconciliation2_Port">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <operation name="ReadByRecId">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2:ReadByRecId" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadByRecId">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadByRecId_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="ReadMultiple">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2:ReadMultiple" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="ReadMultiple">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="ReadMultiple_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="IsUpdated">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2:IsUpdated" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="IsUpdated">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="IsUpdated_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+    <operation name="GetRecIdFromKey">
+      <operation soapAction="urn:microsoft-dynamics-schemas/page/inventoryglreconciliation2:GetRecIdFromKey" style="document" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <input name="GetRecIdFromKey">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </input>
+      <output name="GetRecIdFromKey_Result">
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </output>
+    </operation>
+  </binding>
+  <service name="InventoryGLReconciliation2_Service">
+    <port name="InventoryGLReconciliation2_Port" binding="tns:InventoryGLReconciliation2_Binding">
+      <address location="http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/InventoryGLReconciliation2" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </port>
+  </service>
+</definitions>

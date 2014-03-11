@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8978F1DF-18D7-4BFE-9130-B526D43E81C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MsDynamicsTest</RootNamespace>
+    <AssemblyName>MsDynamicsTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CopyHelper.cs" />
+    <Compile Include="Web References\Areass\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Boms\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CompanyInfo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Currencies\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CustomerLists\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\InventoryPickss\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\InvPostingGroups\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ItemLists\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Languages\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LocationLists\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavAnalysisReportInventory\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavAnalysisViewListInventory\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavBlanketSalesOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavCustomerLedgerEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavCustomerPriceGroups\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavGeneralLedgerEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryAnalysisLines\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryAnalysisMatrix\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryAnalysisReport\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryGLReconciliation2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryGLReconciliation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryPeriodEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryPeriods\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryPostingSetup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryPutAway\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInventoryReportEntry\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavInvSetup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavItemCard\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavItemLedgerEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavJobCard\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavReportSelectionInv\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavSalesLines\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavSalesList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavSalesOrder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavUsers\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavVendorCard\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavVendorLedgerEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNavVendorList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsNav\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PhysInvJournal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PhysInvLedgerEntries\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PurchaseLists\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PurchaseOrders\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Web References\Areass\Areas.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Areass\Areas.wsdl" />
+    <None Include="Web References\Areass\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Boms\Bom.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Boms\Bom.wsdl" />
+    <None Include="Web References\Boms\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CompanyInfo\CompanyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CompanyInfo\CompanyInfo.wsdl" />
+    <None Include="Web References\CompanyInfo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Currencies\Currencies.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Currencies\Currencies.wsdl" />
+    <None Include="Web References\Currencies\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CustomerLists\CustomerList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CustomerLists\CustomerList.wsdl" />
+    <None Include="Web References\CustomerLists\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\InventoryPickss\InventoryPicks.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\InventoryPickss\InventoryPicks.wsdl" />
+    <None Include="Web References\InventoryPickss\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\InvPostingGroups\InventoryPostingGroups.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\InvPostingGroups\InventoryPostingGroups.wsdl" />
+    <None Include="Web References\InvPostingGroups\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ItemLists\ItemList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ItemLists\ItemList.wsdl" />
+    <None Include="Web References\ItemLists\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Languages\Languages.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Languages\Languages.wsdl" />
+    <None Include="Web References\Languages\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LocationLists\LocationList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LocationLists\LocationList.wsdl" />
+    <None Include="Web References\LocationLists\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavAnalysisReportInventory\AnalysisReportInventory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavAnalysisReportInventory\AnalysisReportInventory.wsdl" />
+    <None Include="Web References\MsNavAnalysisReportInventory\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavAnalysisViewListInventory\AnalysisViewListInventory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavAnalysisViewListInventory\AnalysisViewListInventory.wsdl" />
+    <None Include="Web References\MsNavAnalysisViewListInventory\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavBlanketSalesOrder\BlanketSalesOrder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavBlanketSalesOrder\BlanketSalesOrder.wsdl" />
+    <None Include="Web References\MsNavBlanketSalesOrder\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavCustomerLedgerEntries\CustomerLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavCustomerLedgerEntries\CustomerLedgerEntries.wsdl" />
+    <None Include="Web References\MsNavCustomerLedgerEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavCustomerPriceGroups\CustomerPriceGroups.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavCustomerPriceGroups\CustomerPriceGroups.wsdl" />
+    <None Include="Web References\MsNavCustomerPriceGroups\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavGeneralLedgerEntries\GeneralLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavGeneralLedgerEntries\GeneralLedgerEntries.wsdl" />
+    <None Include="Web References\MsNavGeneralLedgerEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisLines\InventoryAnalysisLines.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisLines\InventoryAnalysisLines.wsdl" />
+    <None Include="Web References\MsNavInventoryAnalysisLines\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisMatrix\InventoryAnalysisMatrix.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisMatrix\InventoryAnalysisMatrix.wsdl" />
+    <None Include="Web References\MsNavInventoryAnalysisMatrix\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisReport\InventoryAnalysisReport.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryAnalysisReport\InventoryAnalysisReport.wsdl" />
+    <None Include="Web References\MsNavInventoryAnalysisReport\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryGLReconciliation2\InventoryGLReconciliation2.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryGLReconciliation2\InventoryGLReconciliation2.wsdl" />
+    <None Include="Web References\MsNavInventoryGLReconciliation2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryGLReconciliation\InventoryGLReconciliation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryGLReconciliation\InventoryGLReconciliation.wsdl" />
+    <None Include="Web References\MsNavInventoryGLReconciliation\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryPeriodEntries\InventoryPeriodEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryPeriodEntries\InventoryPeriodEntries.wsdl" />
+    <None Include="Web References\MsNavInventoryPeriodEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryPeriods\InventoryPeriods.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryPeriods\InventoryPeriods.wsdl" />
+    <None Include="Web References\MsNavInventoryPeriods\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryPostingSetup\InventoryPostingSetup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryPostingSetup\InventoryPostingSetup.wsdl" />
+    <None Include="Web References\MsNavInventoryPostingSetup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryPutAway\InventoryPutAway.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryPutAway\InventoryPutAway.wsdl" />
+    <None Include="Web References\MsNavInventoryPutAway\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInventoryReportEntry\InventoryReportEntry.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInventoryReportEntry\InventoryReportEntry.wsdl" />
+    <None Include="Web References\MsNavInventoryReportEntry\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavInvSetup\InventorySetup.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavInvSetup\InventorySetup.wsdl" />
+    <None Include="Web References\MsNavInvSetup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavItemCard\ItemCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavItemCard\ItemCard.wsdl" />
+    <None Include="Web References\MsNavItemCard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavItemLedgerEntries\ItemLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavItemLedgerEntries\ItemLedgerEntries.wsdl" />
+    <None Include="Web References\MsNavItemLedgerEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavJobCard\JobCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavJobCard\JobCard.wsdl" />
+    <None Include="Web References\MsNavJobCard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavReportSelectionInv\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavReportSelectionInv\ReportSelectionInventory.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavReportSelectionInv\ReportSelectionInventory.wsdl" />
+    <None Include="Web References\MsNavSalesLines\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavSalesLines\SalesLines.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavSalesLines\SalesLines.wsdl" />
+    <None Include="Web References\MsNavSalesList\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavSalesList\SalesList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavSalesList\SalesList.wsdl" />
+    <None Include="Web References\MsNavSalesOrder\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavSalesOrder\SalesOrder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavSalesOrder\SalesOrder.wsdl" />
+    <None Include="Web References\MsNavUsers\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavUsers\Users.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavUsers\Users.wsdl" />
+    <None Include="Web References\MsNavVendorCard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavVendorCard\VendorCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavVendorCard\VendorCard.wsdl" />
+    <None Include="Web References\MsNavVendorLedgerEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavVendorLedgerEntries\VendorLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavVendorLedgerEntries\VendorLedgerEntries.wsdl" />
+    <None Include="Web References\MsNavVendorList\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavVendorList\VendorList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavVendorList\VendorList.wsdl" />
+    <None Include="Web References\MsNav\Customer.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNav\Customer.wsdl" />
+    <None Include="Web References\MsNav\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PhysInvJournal\PhysInventoryJournal.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PhysInvJournal\PhysInventoryJournal.wsdl" />
+    <None Include="Web References\PhysInvJournal\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PhysInvLedgerEntries\PhysInventoryLedgerEntries.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PhysInvLedgerEntries\PhysInventoryLedgerEntries.wsdl" />
+    <None Include="Web References\PhysInvLedgerEntries\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PurchaseLists\PurchaseList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PurchaseLists\PurchaseList.wsdl" />
+    <None Include="Web References\PurchaseLists\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PurchaseOrders\PurchaseOrder.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PurchaseOrders\PurchaseOrder.wsdl" />
+    <None Include="Web References\PurchaseOrders\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/AnalysisReportInventory">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavAnalysisReportInventory\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/AnalysisReportInventory</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavAnalysisReportInventory_AnalysisReportInventory_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/AnalysisViewListInventory">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavAnalysisViewListInventory\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/AnalysisViewListInventory</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavAnalysisViewListInventory_AnalysisViewListInventory_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Areas">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Areass\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Areas</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_Areass_Areas_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/BlanketSalesOrder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavBlanketSalesOrder\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/BlanketSalesOrder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavBlanketSalesOrder_BlanketSalesOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Bom">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Boms\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Bom</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_Boms_Bom_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/CompanyInfo">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CompanyInfo\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/CompanyInfo</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_CompanyInfo_CompanyInfo_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Currencies">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Currencies\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Currencies</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_Currencies_Currencies_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Customer">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNav\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Customer</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNav_Customer_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/CustomerLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavCustomerLedgerEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/CustomerLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavCustomerLedgerEntries_CustomerLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/CustomerList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CustomerLists\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/CustomerList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_CustomerLists_CustomerList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/CustomerPriceGroups">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavCustomerPriceGroups\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/CustomerPriceGroups</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavCustomerPriceGroups_CustomerPriceGroups_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/GeneralLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavGeneralLedgerEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/GeneralLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavGeneralLedgerEntries_GeneralLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisLines">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryAnalysisLines\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisLines</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryAnalysisLines_InventoryAnalysisLines_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisMatrix">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryAnalysisMatrix\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisMatrix</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryAnalysisMatrix_InventoryAnalysisMatrix_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisReport">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryAnalysisReport\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryAnalysisReport</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryAnalysisReport_InventoryAnalysisReport_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryGLReconciliation">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryGLReconciliation\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryGLReconciliation</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryGLReconciliation_InventoryGLReconciliation_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryGLReconciliation2">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryGLReconciliation2\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryGLReconciliation2</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryGLReconciliation2_InventoryGLReconciliation2_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPeriodEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryPeriodEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPeriodEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryPeriodEntries_InventoryPeriodEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPeriods">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryPeriods\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPeriods</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryPeriods_InventoryPeriods_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPicks">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InventoryPickss\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPicks</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_InventoryPickss_InventoryPicks_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPostingGroups">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InvPostingGroups\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPostingGroups</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_InvPostingGroups_InventoryPostingGroups_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPostingSetup">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryPostingSetup\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPostingSetup</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryPostingSetup_InventoryPostingSetup_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryPutAway">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryPutAway\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryPutAway</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryPutAway_InventoryPutAway_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventoryReportEntry">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInventoryReportEntry\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventoryReportEntry</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInventoryReportEntry_InventoryReportEntry_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/InventorySetup">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavInvSetup\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/InventorySetup</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavInvSetup_InventorySetup_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ItemCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavItemCard\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ItemCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavItemCard_ItemCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ItemLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavItemLedgerEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ItemLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavItemLedgerEntries_ItemLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ItemList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ItemLists\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ItemList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_ItemLists_ItemList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/JobCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavJobCard\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/JobCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavJobCard_JobCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Languages">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Languages\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Languages</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_Languages_Languages_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/LocationList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LocationLists\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/LocationList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_LocationLists_LocationList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PhysInventoryJournal">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PhysInvJournal\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/PhysInventoryJournal</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_PhysInvJournal_PhysInventoryJournal_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PhysInventoryLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PhysInvLedgerEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/PhysInventoryLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_PhysInvLedgerEntries_PhysInventoryLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PurchaseList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PurchaseLists\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/PurchaseList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_PurchaseLists_PurchaseList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PurchaseOrder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PurchaseOrders\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/PurchaseOrder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_PurchaseOrders_PurchaseOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ReportSelectionInventory">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavReportSelectionInv\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ReportSelectionInventory</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavReportSelectionInv_ReportSelectionInventory_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/SalesLines">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavSalesLines\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/SalesLines</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavSalesLines_SalesLines_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/SalesList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavSalesList\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/SalesList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavSalesList_SalesList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/SalesOrder">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavSalesOrder\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/SalesOrder</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavSalesOrder_SalesOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/Users">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavUsers\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/Users</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavUsers_Users_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/VendorCard">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavVendorCard\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/VendorCard</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavVendorCard_VendorCard_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/VendorLedgerEntries">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavVendorLedgerEntries\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/VendorLedgerEntries</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavVendorLedgerEntries_VendorLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/VendorList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavVendorList\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/VendorList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavVendorList_VendorList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\favicon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
