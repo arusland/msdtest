@@ -209,6 +209,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\MsNavPurchaseOrders\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\MsNavReportSelectionInv\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -250,6 +255,11 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\MsNav\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MsProdOrderLineList\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -550,6 +560,14 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\MsNavPurchaseOrders\PurchaseOrders.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavPurchaseOrders\PurchaseOrders.wsdl" />
+    <None Include="Web References\MsNavPurchaseOrders\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Web References\MsNavReportSelectionInv\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -619,6 +637,14 @@
     </None>
     <None Include="Web References\MsNav\Customer.wsdl" />
     <None Include="Web References\MsNav\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsProdOrderLineList\ProdOrderLineList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsProdOrderLineList\ProdOrderLineList.wsdl" />
+    <None Include="Web References\MsProdOrderLineList\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -1028,6 +1054,17 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>MsDynamicsTest_PhysInvLedgerEntries_PhysInventoryLedgerEntries_Service</CachedSettingsPropName>
     </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderLineList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsProdOrderLineList\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderLineList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsProdOrderLineList_ProdOrderLineList_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PurchaseList">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\PurchaseLists\</RelPath>
@@ -1049,6 +1086,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>MsDynamicsTest_PurchaseOrders_PurchaseOrder_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PurchaseOrders">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavPurchaseOrders\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/PurchaseOrders</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavPurchaseOrders_PurchaseOrders_Service</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ReportSelectionInventory">
       <UrlBehavior>Dynamic</UrlBehavior>

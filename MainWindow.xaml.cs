@@ -53,6 +53,8 @@ using MsDynamicsTest.MsNavSalesList;
 using MsDynamicsTest.MsNavSalesLines;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
+using MsDynamicsTest.MsProdOrderLineList;
+using MsDynamicsTest.MsNavPurchaseOrders;
 
 namespace MsDynamicsTest
 {
@@ -158,7 +160,11 @@ namespace MsDynamicsTest
 
             SalesList,
 
-            SalesLines
+            SalesLines,
+
+            ProdOrderLineList,
+
+            PurchaseOrders
         };
 
         public MainWindow()
@@ -177,6 +183,7 @@ namespace MsDynamicsTest
             serviceComboBox.Items.Add(ServiceType.ItemCard);
             serviceComboBox.Items.Add(ServiceType.Bom);
             serviceComboBox.Items.Add(ServiceType.PurchaseOrder);
+            serviceComboBox.Items.Add(ServiceType.PurchaseOrders);
             serviceComboBox.Items.Add(ServiceType.PurchaseList);
             serviceComboBox.Items.Add(ServiceType.Areas);
             serviceComboBox.Items.Add(ServiceType.InventoryPostingGroups);
@@ -209,6 +216,7 @@ namespace MsDynamicsTest
             serviceComboBox.Items.Add(ServiceType.ItemLedgerEntries);
             serviceComboBox.Items.Add(ServiceType.SalesList);
             serviceComboBox.Items.Add(ServiceType.SalesLines);
+            serviceComboBox.Items.Add(ServiceType.ProdOrderLineList);
 
             serviceComboBox.SelectedIndex = 0;
         }
@@ -358,11 +366,37 @@ namespace MsDynamicsTest
                 case ServiceType.SalesLines:
                     ReadSalesLines(maxCount);
                     break;
+                case ServiceType.ProdOrderLineList:
+                    ReadProdOrderLineList(maxCount);
+                    break;
+                case ServiceType.PurchaseOrders:
+                    ReadPurchaseOrders(maxCount);
+                    break;
                 default:
                     MessageBox.Show("Not supported: " + serviceComboBox.SelectedItem.ToString(), "Warning",
                         MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     break;
             }
+        }
+
+        void ReadPurchaseOrders(int maxCount)
+        {
+            var service = new PurchaseOrders_Service();
+            ConfigService(service);
+
+            var po = service.ReadMultiple(null, null, maxCount);
+
+            FillData("PurchaseOrders", po);
+        }
+
+        void ReadProdOrderLineList(int maxCount)
+        {
+            var service = new ProdOrderLineList_Service();
+            ConfigService(service);
+
+            ProdOrderLineList[] po = service.ReadMultiple(null, null, maxCount);
+
+            FillData("ProdOrderLineList", po);
         }
 
         void ReadSalesLines(int maxCount)
