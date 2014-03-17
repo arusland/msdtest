@@ -53,6 +53,7 @@ using MsDynamicsTest.MsNavSalesList;
 using MsDynamicsTest.MsNavSalesLines;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
+using MsDynamicsTest.MsProdOrderLineList;
 
 namespace MsDynamicsTest
 {
@@ -158,7 +159,9 @@ namespace MsDynamicsTest
 
             SalesList,
 
-            SalesLines
+            SalesLines,
+
+            ProdOrderLineList
         };
 
         public MainWindow()
@@ -209,6 +212,7 @@ namespace MsDynamicsTest
             serviceComboBox.Items.Add(ServiceType.ItemLedgerEntries);
             serviceComboBox.Items.Add(ServiceType.SalesList);
             serviceComboBox.Items.Add(ServiceType.SalesLines);
+            serviceComboBox.Items.Add(ServiceType.ProdOrderLineList);
 
             serviceComboBox.SelectedIndex = 0;
         }
@@ -358,11 +362,24 @@ namespace MsDynamicsTest
                 case ServiceType.SalesLines:
                     ReadSalesLines(maxCount);
                     break;
+                case ServiceType.ProdOrderLineList:
+                    ReadProdOrderLineList(maxCount);
+                    break;
                 default:
                     MessageBox.Show("Not supported: " + serviceComboBox.SelectedItem.ToString(), "Warning",
                         MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     break;
             }
+        }
+
+        void ReadProdOrderLineList(int maxCount)
+        {
+            var service = new ProdOrderLineList_Service();
+            ConfigService(service);
+
+            ProdOrderLineList[] po = service.ReadMultiple(null, null, maxCount);
+
+            FillData("ProdOrderLineList", po);
         }
 
         void ReadSalesLines(int maxCount)

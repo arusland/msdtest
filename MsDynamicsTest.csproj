@@ -254,6 +254,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\MsProdOrderLineList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\PhysInvJournal\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -619,6 +624,14 @@
     </None>
     <None Include="Web References\MsNav\Customer.wsdl" />
     <None Include="Web References\MsNav\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsProdOrderLineList\ProdOrderLineList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsProdOrderLineList\ProdOrderLineList.wsdl" />
+    <None Include="Web References\MsProdOrderLineList\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -1027,6 +1040,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>MsDynamicsTest_PhysInvLedgerEntries_PhysInventoryLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderLineList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsProdOrderLineList\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderLineList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsProdOrderLineList_ProdOrderLineList_Service</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/PurchaseList">
       <UrlBehavior>Dynamic</UrlBehavior>

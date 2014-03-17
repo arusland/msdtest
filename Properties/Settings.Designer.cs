@@ -514,5 +514,16 @@ namespace MsDynamicsTest.Properties {
                 return ((string)(this["MsDynamicsTest_MsNavSalesLines_SalesLines_Service"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ProdOrderLine" +
+            "List")]
+        public string MsDynamicsTest_MsProdOrderLineList_ProdOrderLineList_Service {
+            get {
+                return ((string)(this["MsDynamicsTest_MsProdOrderLineList_ProdOrderLineList_Service"]));
+            }
+        }
     }
 }
