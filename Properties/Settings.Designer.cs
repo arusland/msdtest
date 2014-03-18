@@ -525,7 +525,6 @@ namespace MsDynamicsTest.Properties {
                 return ((string)(this["MsDynamicsTest_MsProdOrderLineList_ProdOrderLineList_Service"]));
             }
         }
-<<<<<<< HEAD
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -537,7 +536,5 @@ namespace MsDynamicsTest.Properties {
                 return ((string)(this["MsDynamicsTest_MsNavPurchaseOrders_PurchaseOrders_Service"]));
             }
         }
-=======
->>>>>>> a11b4305787b773a413ce784b0a4bba057ba5457
     }
 }
