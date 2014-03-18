@@ -54,7 +54,10 @@ using MsDynamicsTest.MsNavSalesLines;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
 using MsDynamicsTest.MsProdOrderLineList;
+<<<<<<< HEAD
 using MsDynamicsTest.MsNavPurchaseOrders;
+=======
+>>>>>>> a11b4305787b773a413ce784b0a4bba057ba5457
 
 namespace MsDynamicsTest
 {
@@ -162,9 +165,13 @@ namespace MsDynamicsTest
 
             SalesLines,
 
+<<<<<<< HEAD
             ProdOrderLineList,
 
             PurchaseOrders
+=======
+            ProdOrderLineList
+>>>>>>> a11b4305787b773a413ce784b0a4bba057ba5457
         };
 
         public MainWindow()
@@ -369,9 +376,12 @@ namespace MsDynamicsTest
                 case ServiceType.ProdOrderLineList:
                     ReadProdOrderLineList(maxCount);
                     break;
+<<<<<<< HEAD
                 case ServiceType.PurchaseOrders:
                     ReadPurchaseOrders(maxCount);
                     break;
+=======
+>>>>>>> a11b4305787b773a413ce784b0a4bba057ba5457
                 default:
                     MessageBox.Show("Not supported: " + serviceComboBox.SelectedItem.ToString(), "Warning",
                         MessageBoxButton.OK, MessageBoxImage.Exclamation);
@@ -379,6 +389,7 @@ namespace MsDynamicsTest
             }
         }
 
+<<<<<<< HEAD
         void ReadPurchaseOrders(int maxCount)
         {
             var service = new PurchaseOrders_Service();
@@ -389,6 +400,8 @@ namespace MsDynamicsTest
             FillData("PurchaseOrders", po);
         }
 
+=======
+>>>>>>> a11b4305787b773a413ce784b0a4bba057ba5457
         void ReadProdOrderLineList(int maxCount)
         {
             var service = new ProdOrderLineList_Service();
