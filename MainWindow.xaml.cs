@@ -55,6 +55,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Input;
 using MsDynamicsTest.MsProdOrderLineList;
 using MsDynamicsTest.MsNavPurchaseOrders;
+using MsDynamicsTest.MsNavProdOrderCompLineList;
 
 namespace MsDynamicsTest
 {
@@ -164,7 +165,9 @@ namespace MsDynamicsTest
 
             ProdOrderLineList,
 
-            PurchaseOrders
+            PurchaseOrders,
+
+            ProdOrderCompLineList
         };
 
         public MainWindow()
@@ -217,6 +220,7 @@ namespace MsDynamicsTest
             serviceComboBox.Items.Add(ServiceType.SalesList);
             serviceComboBox.Items.Add(ServiceType.SalesLines);
             serviceComboBox.Items.Add(ServiceType.ProdOrderLineList);
+            serviceComboBox.Items.Add(ServiceType.ProdOrderCompLineList);
 
             serviceComboBox.SelectedIndex = 0;
         }
@@ -372,11 +376,24 @@ namespace MsDynamicsTest
                 case ServiceType.PurchaseOrders:
                     ReadPurchaseOrders(maxCount);
                     break;
+                case ServiceType.ProdOrderCompLineList:
+                    ReadProdOrderCompLineList(maxCount);
+                    break;
                 default:
                     MessageBox.Show("Not supported: " + serviceComboBox.SelectedItem.ToString(), "Warning",
                         MessageBoxButton.OK, MessageBoxImage.Exclamation);
                     break;
             }
+        }
+
+        void ReadProdOrderCompLineList(int maxCount)
+        {
+            var service = new ProdOrderCompLineList_Service();
+            ConfigService(service);
+
+            var po = service.ReadMultiple(null, null, maxCount);
+
+            FillData("ProdOrderCompLineList", po);
         }
 
         void ReadPurchaseOrders(int maxCount)

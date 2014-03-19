@@ -536,5 +536,16 @@ namespace MsDynamicsTest.Properties {
                 return ((string)(this["MsDynamicsTest_MsNavPurchaseOrders_PurchaseOrders_Service"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://workpc:7047/DynamicsNAV/WS/CRONUS%20International%20Ltd/Page/ProdOrderComp" +
+            "LineList")]
+        public string MsDynamicsTest_MsNavProdOrderCompLineList_ProdOrderCompLineList_Service {
+            get {
+                return ((string)(this["MsDynamicsTest_MsNavProdOrderCompLineList_ProdOrderCompLineList_Service"]));
+            }
+        }
     }
 }

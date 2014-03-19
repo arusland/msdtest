@@ -209,6 +209,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\MsNavProdOrderCompLineList\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\MsNavPurchaseOrders\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -557,6 +562,14 @@
     </None>
     <None Include="Web References\MsNavJobCard\JobCard.wsdl" />
     <None Include="Web References\MsNavJobCard\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MsNavProdOrderCompLineList\ProdOrderCompLineList.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MsNavProdOrderCompLineList\ProdOrderCompLineList.wsdl" />
+    <None Include="Web References\MsNavProdOrderCompLineList\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -1053,6 +1066,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>MsDynamicsTest_PhysInvLedgerEntries_PhysInventoryLedgerEntries_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderCompLineList">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MsNavProdOrderCompLineList\</RelPath>
+      <UpdateFromURL>http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderCompLineList</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MsDynamicsTest_MsNavProdOrderCompLineList_ProdOrderCompLineList_Service</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://workpc:7047/DynamicsNAV/WS/Page/ProdOrderLineList">
       <UrlBehavior>Dynamic</UrlBehavior>
